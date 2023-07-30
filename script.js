@@ -28,7 +28,11 @@ const loop = setInterval(() => {
         mario.style.width = '75px'
         mario.style.marginLeft = '50px'
 
+        reiniciar()
+
         clearInterval(loop);
+
+    } else  {
 
     }
 
@@ -40,3 +44,21 @@ const loop = setInterval(() => {
 }, 100);
 
 document.addEventListener('keydown', jump);
+
+const btnReiniciar = document.querySelector('.btn-reiniciar')
+
+function reiniciar() {
+    
+
+    btnReiniciar.addEventListener('click', () => {
+        window.location.reload()
+    })
+
+    btnReiniciar.classList.add('btn-reiniciar')
+}
+
+function SaidaDoBotao() {
+    btnReiniciar.classList.remove('btn-reiniciar')
+}
+
+SaidaDoBotao()
