@@ -75,6 +75,10 @@ h1 {
     cursor: pointer;
 }
 
+.sumir {
+    display: none;
+}
+
 @keyframes pipe-animation {
     from {
         right: -80px;

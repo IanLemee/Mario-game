@@ -28,6 +28,7 @@ const loop = setInterval(() => {
         mario.style.width = '75px'
         mario.style.marginLeft = '50px'
 
+        btnReiniciar.classList.remove('sumir')
         reiniciar()
 
         clearInterval(loop);
@@ -49,16 +50,7 @@ const btnReiniciar = document.querySelector('.btn-reiniciar')
 
 function reiniciar() {
     
-
     btnReiniciar.addEventListener('click', () => {
-        window.location.reload()
+        window.location.reload() 
     })
-
-    btnReiniciar.classList.add('btn-reiniciar')
 }
-
-function SaidaDoBotao() {
-    btnReiniciar.classList.remove('btn-reiniciar')
-}
-
-SaidaDoBotao()
